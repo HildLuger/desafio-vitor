@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -81,6 +84,42 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+#material-panel {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 10px 15px; /* Espaçamento interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+#material-panel label {
+  font-family: Arial, sans-serif; /* Fonte moderna */
+  font-size: 14px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-right: 10px; /* Espaçamento à direita */
+}
+
+#materialType {
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  padding: 5px 10px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve opacidade */
+  color: #333; /* Cor do texto */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+#materialType:hover {
+  border-color: #888; /* Muda a cor da borda ao passar o mouse */
+}
+
+#materialType:focus {
+  outline: none; /* Remove a borda padrão do foco */
+  border-color: #007BFF; /* Cor da borda ao focar */
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

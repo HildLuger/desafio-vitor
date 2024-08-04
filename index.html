@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three.js with Vite</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body, html {
       margin: 0;
@@ -18,6 +19,19 @@
   </style>
 </head>
 <body>
+  <div id="material-panel" style="position: absolute; top: 30px; left: 30px; z-index: 100;">
+    <label for="materialType">Tipo de Material:</label>
+    <select id="materialType">
+      <option value="standard">Padrão</option>
+      <option value="metal">Metal</option>
+      <option value="glass">Vidro</option>
+    </select>
+  
+    <label for="backgroundColor">Cor de Fundo:</label>
+    <input type="color" id="backgroundColor" value="#616161">
+  
+  </div>  
+
   <script type="module" src="main.js"></script>
 </body>
 </html>
